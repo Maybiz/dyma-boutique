@@ -19,22 +19,15 @@
 
 <script>
 export default {
-  data() {
-    return {
-      product: {
-        img: "https://www.journaldugeek.com/content/uploads/2018/07/macbook-air.jpg",
-        title: "MacBook",
-        description:
-          "D'une finesse et d'une légèreté hors du commun, le MacBook Pro est encore plus rapide et plus puissant qu'avant.",
-        price: "1500 €",
-      },
-    };
-  },
+  props: ["product"],
 };
 </script>
 
 <style>
 .product-container {
   height: 400px;
+}
+p {
+  font-size: 12px;
 }
 </style>
